@@ -1,0 +1,14 @@
+.project
+.settings
+target
+.classpath
+**/*.iml
+*.iml
+**/.idea/
+.idea/
+.metadata
+out
+*.png
+*.not
+target
+.DS_Store
