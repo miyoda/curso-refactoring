@@ -16,10 +16,10 @@ public class CalculadoraTest {
     @Test
     public void calcularConRebajaJoven() {
         List<Producto> productos = Arrays.asList(
-                new Producto("pan", 0.4, "comida", 1, false),
-                new Producto("perfume", 9.99, "drogueria", 1, false),
-                new Producto("billete tren", 4.5, "transporte", 1, false),
-                new Producto("casa", 500, "vivienda", 1, false)
+                new Producto("pan", 0.4, TipoProducto.COMIDA, 1, false),
+                new Producto("perfume", 9.99, TipoProducto.DROGUERIA, 1, false),
+                new Producto("billete tren", 4.5, TipoProducto.TRANSPORTE, 1, false),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, false)
         );
         Comprador comprador = new Comprador(20);
 
@@ -31,11 +31,11 @@ public class CalculadoraTest {
     @Test
     public void calcularConRebajaJovenYMitadDePrecio() {
         List<Producto> productos = Arrays.asList(
-                new Producto("pan", 0.4, "comida", 1, false),
-                new Producto("perfume", 9.99, "drogueria", 1, false),
-                new Producto("billete tren", 4.5, "transporte", 1, false),
-                new Producto("casa", 500, "vivienda", 1, true),
-                new Producto("casa", 500, "vivienda", 1, true)
+                new Producto("pan", 0.4, TipoProducto.COMIDA, 1, false),
+                new Producto("perfume", 9.99, TipoProducto.DROGUERIA, 1, false),
+                new Producto("billete tren", 4.5, TipoProducto.TRANSPORTE, 1, false),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, true),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, true)
         );
         Comprador comprador = new Comprador(20);
 
@@ -47,11 +47,11 @@ public class CalculadoraTest {
     @Test
     public void calcularConRebajaJovenYDosAMitadDePrecio() {
         List<Producto> productos = Arrays.asList(
-                new Producto("pan", 0.4, "comida", 1, false),
-                new Producto("perfume", 9.99, "drogueria", 1, false),
-                new Producto("billete tren", 4.5, "transporte", 1, false),
-                new Producto("casa", 500, "vivienda", 1, true),
-                new Producto("casa", 500, "vivienda", 1, true)
+                new Producto("pan", 0.4, TipoProducto.COMIDA, 1, false),
+                new Producto("perfume", 9.99, TipoProducto.DROGUERIA, 1, false),
+                new Producto("billete tren", 4.5, TipoProducto.TRANSPORTE, 1, false),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, true),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, true)
         );
         Comprador comprador = new Comprador(20);
 
@@ -63,13 +63,13 @@ public class CalculadoraTest {
     @Test
     public void calcularConRebajaJovenYDosAMitadDePrecioEnSegundaUnidad() {
         List<Producto> productos = Arrays.asList(
-                new Producto("pan", 0.4, "comida", 1, false),
-                new Producto("perfume", 9.99, "drogueria", 1, false),
-                new Producto("billete tren", 4.5, "transporte", 1, false),
-                new Producto("casa", 500, "vivienda", 1, true),
-                new Producto("casa", 500, "vivienda", 1, true),
-                new Producto("casa", 500, "vivienda", 1, true),
-                new Producto("casa", 500, "vivienda", 1, true)
+                new Producto("pan", 0.4, TipoProducto.COMIDA, 1, false),
+                new Producto("perfume", 9.99, TipoProducto.DROGUERIA, 1, false),
+                new Producto("billete tren", 4.5, TipoProducto.TRANSPORTE, 1, false),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, true),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, true),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, true),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, true)
         );
         Comprador comprador = new Comprador(20);
 
@@ -81,10 +81,10 @@ public class CalculadoraTest {
     @Test
     public void calcularConRebajaJubilado() {
         List<Producto> productos = Arrays.asList(
-                new Producto("pan", 0.4, "comida", 1, false),
-                new Producto("perfume", 9.99, "drogueria", 1, false),
-                new Producto("billete tren", 4.5, "transporte", 1, false),
-                new Producto("casa", 500, "vivienda", 1, false)
+                new Producto("pan", 0.4, TipoProducto.COMIDA, 1, false),
+                new Producto("perfume", 9.99, TipoProducto.DROGUERIA, 1, false),
+                new Producto("billete tren", 4.5, TipoProducto.TRANSPORTE, 1, false),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, false)
         );
         Comprador comprador = new Comprador(70);
 
@@ -96,10 +96,10 @@ public class CalculadoraTest {
     @Test
     public void calcularSinRebaja() {
         List<Producto> productos = Arrays.asList(
-                new Producto("pan", 0.4, "comida", 1, false),
-                new Producto("perfume", 9.99, "drogueria", 1, false),
-                new Producto("billete tren", 4.5, "transporte", 1, false),
-                new Producto("casa", 500, "vivienda", 1, false)
+                new Producto("pan", 0.4, TipoProducto.COMIDA, 1, false),
+                new Producto("perfume", 9.99, TipoProducto.DROGUERIA, 1, false),
+                new Producto("billete tren", 4.5, TipoProducto.TRANSPORTE, 1, false),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 1, false)
         );
         Comprador comprador = new Comprador(50);
 
@@ -111,10 +111,10 @@ public class CalculadoraTest {
     @Test
     public void calcularConRebajaEnCadaProducto() {
         List<Producto> productos = Arrays.asList(
-                new Producto("pan", 0.4, "comida", 0.5, false),
-                new Producto("perfume", 9.99, "drogueria", 0.6, false),
-                new Producto("billete tren", 4.5, "transporte", 0.7, false),
-                new Producto("casa", 500, "vivienda", 0.8, false)
+                new Producto("pan", 0.4, TipoProducto.COMIDA, 0.5, false),
+                new Producto("perfume", 9.99, TipoProducto.DROGUERIA, 0.6, false),
+                new Producto("billete tren", 4.5, TipoProducto.TRANSPORTE, 0.7, false),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 0.8, false)
         );
         Comprador comprador = new Comprador(50);
 
@@ -126,10 +126,10 @@ public class CalculadoraTest {
     @Test
     public void calcularConRebajaEnCadaProductoYRebajaJoven() {
         List<Producto> productos = Arrays.asList(
-                new Producto("pan", 0.4, "comida", 0.5, false),
-                new Producto("perfume", 9.99, "drogueria", 0.6, false),
-                new Producto("billete tren", 4.5, "transporte", 0.7, false),
-                new Producto("casa", 500, "vivienda", 0.8, false)
+                new Producto("pan", 0.4, TipoProducto.COMIDA, 0.5, false),
+                new Producto("perfume", 9.99, TipoProducto.DROGUERIA, 0.6, false),
+                new Producto("billete tren", 4.5, TipoProducto.TRANSPORTE, 0.7, false),
+                new Producto("casa", 500, TipoProducto.VIVIENDA, 0.8, false)
         );
         Comprador comprador = new Comprador(20);
 
@@ -141,13 +141,27 @@ public class CalculadoraTest {
     @Test
     public void calcularProductoGeneral() {
         List<Producto> productos = Arrays.asList(
-                new Producto("juegos", 50.6, "otro", 1, false)
+                new Producto("juegos", 50.6, TipoProducto.GENERAL, 1, false)
         );
         Comprador comprador = new Comprador(20);
 
         double precio = sut.calcular(productos, comprador);
 
         assertThat(precio, equalTo(61.23));
+    }
+
+    @Test
+    public void calcularProductoConMitadDePrecio() {
+        List<Producto> productos = Arrays.asList(
+                new Producto("juegos", 50.6, TipoProducto.GENERAL, 1, true),
+                new Producto("juegos", 50.6, TipoProducto.GENERAL, 1, true),
+                new Producto("juegos", 50.6, TipoProducto.GENERAL, 1, true)
+        );
+        Comprador comprador = new Comprador(20);
+
+        double precio = sut.calcular(productos, comprador);
+
+        assertThat(precio, equalTo(153.06));
     }
 
     @Test
